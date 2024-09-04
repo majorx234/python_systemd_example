@@ -1,0 +1,12 @@
+[Unit]
+Description=my python service - example script
+
+[Service]
+Type=simple
+#User=frib1
+ExecStart=/usr/bin/my_python_service.py
+#Restart=on-failure
+#StandardOutput=file:%h/log_file
+
+[Install]
+WantedBy=default.target
