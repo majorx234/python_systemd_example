@@ -2,7 +2,7 @@
 Description=my python service - example script
 
 [Service]
-Type=simple
+Type=notify
 #User=frib1
 ExecStart=/usr/bin/my_python_service.py
 #Restart=on-failure

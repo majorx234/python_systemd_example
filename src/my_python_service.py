@@ -4,7 +4,7 @@ import systemd.daemon
 
 def main():
     print('Starting my python service ...')
-    time.sleep(10)
+    time.sleep(5)
     print('Startup complete')
 
     # Tell systemd that our service is ready
