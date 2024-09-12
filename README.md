@@ -6,3 +6,12 @@
   - uses python lib provided by systemd maintainers: https://github.com/systemd/pystemd
   - WIP
 
+# usage:
+- copy service:
+  - ```cp service/my_python_service.service ~/.config/systemd/user```
+- start service:
+  - ```systemctl --user start my_python_service.service```
+- check status:
+  - ```systemctl --user status my_python_service.service```
+## loging
+- ```journalctl --user-unit my_python_service.service```
